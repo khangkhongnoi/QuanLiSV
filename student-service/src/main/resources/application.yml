@@ -1,0 +1,22 @@
+
+server:
+    port: 8220
+    servlet:
+        context-path: /student-service
+spring:
+    application:
+        name: student-service
+    datasource:
+        url: jdbc:postgresql://localhost:5424/STUDENT
+        username: postgres
+        password: khangttcnpm2024
+        driver-class-name: org.postgresql.Driver
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                format_sql: true
+        show-sql: true
