@@ -34,4 +34,24 @@ public class CourseController {
             throw new RuntimeException(e);
         }
     }
+
+    @PutMapping("/{ma_course}")
+    boolean updateCourse(@PathVariable int ma_course, @RequestBody Course course) {
+        try {
+            courseService.updateCourse(course,ma_course);
+            return true;
+        } catch (RuntimeException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @DeleteMapping("/{ma_course}")
+    boolean deleteCourse(@PathVariable int ma_course) {
+        try {
+            courseService.deleteCourse(ma_course);
+            return true;
+        } catch (RuntimeException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
