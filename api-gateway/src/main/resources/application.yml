@@ -21,6 +21,11 @@ spring:
                   uri: http://localhost:8221
                   predicates:
                       - Path=/course-service/**
+
+                - id: registration_service
+                  uri: http://localhost:8222
+                  predicates:
+                    - Path=/registration-service/**
 #
 #                - id: kpi_notification
 #                  uri: http://${KPI_CONG_VIEC_IP:localhost}:8212

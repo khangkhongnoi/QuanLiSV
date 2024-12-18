@@ -1,0 +1,30 @@
+server:
+    port: 8222
+    servlet:
+        context-path: /registration-service
+spring:
+    application:
+        name: registration-service
+
+    data:
+      mongodb:
+          host: localhost
+          port: 27017
+          database: registration_db
+          username: admin_username
+          password: admin_password
+          authentication-database: admin
+
+    kafka:
+        bootstrap-servers: localhost:9092  # Kafka server trong Docker
+        consumer:
+            group-id: notification-group       # Tên nhóm Kafka consumer
+            key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+            properties:
+                spring.json.trusted.packages: '*'  # Tin cậy tất cả các package cho JSON
+        producer:
+            key-serializer: org.apache.kafka.common.serialization.StringSerializer
+            value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+        template:
+            default-topic: registration-events  # Tên topic mặc định

@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: notification-service
+
+    mail:
+        host: smtp.gmail.com
+        password: tlnsrirhnfqsjrby
+        port: 587
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+        username: khangchim248@gmail.com
+
+api_file_service: http://localhost:8220
