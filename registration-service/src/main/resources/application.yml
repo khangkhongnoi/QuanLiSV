@@ -11,9 +11,9 @@ spring:
           host: localhost
           port: 27017
           database: registration_db
-          username: admin_username
-          password: admin_password
-          authentication-database: admin
+#          username: admin_username
+#          password: admin_password
+#          authentication-database: admin
 
     kafka:
         bootstrap-servers: localhost:9092  # Kafka server trong Docker

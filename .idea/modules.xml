@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/QuanLiSV.iml" filepath="$PROJECT_DIR$/.idea/QuanLiSV.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/registration-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/registration-service.main.iml" />
     </modules>
   </component>
 </project>

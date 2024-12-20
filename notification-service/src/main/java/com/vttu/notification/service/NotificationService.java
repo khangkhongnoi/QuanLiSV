@@ -25,7 +25,7 @@ public class NotificationService {
 
         // Extract details (customize as per your message format)
 
-        String subject = "Registration Confirmation";
+        String subject = "Thông Báo VTTU";
         String body = "Bạn đã đăng ký thành công khóa học.Xin cảm ơn!";
 
         // Gửi email
